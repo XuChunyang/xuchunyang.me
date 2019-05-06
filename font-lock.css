@@ -1,0 +1,13 @@
+/* The default Emacs color theme */
+.font-lock-builtin-face {color: #483d8b;}
+.font-lock-comment-delimiter-face {color: #b22222;}
+.font-lock-comment-face {color: #b22222;}
+.font-lock-constant-face {color: #008b8b;}
+.font-lock-doc-face {color: #8b2252;}
+.font-lock-function-name-face {color: blue;}
+.font-lock-keyword-face {color: purple;}
+.font-lock-preprocessor-face {color: #483d8b;}
+.font-lock-string-face {color: #8b2252;}
+.font-lock-type-face {color: #228b22;}
+.font-lock-variable-name-face {color: #A0522D;}
+.font-lock-warning-face {color: red;}
