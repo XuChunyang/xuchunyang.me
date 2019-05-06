@@ -56,7 +56,9 @@
     (format "<pre>%s</pre>" result)))
 
 ;; The command line interface:
-;; $ cat colorize.el | emacs -Q --batch -l colorize.el --lang emacs-lisp
+;; $ cat colorize.el | emacs -Q --batch -l colorize.el --lang emacs-lisp > index.html
+;; $ echo '<link rel="stylesheet" href="font-lock.css">' >> index.html
+;; $ open index.html
 (when noninteractive
   (pcase argv
     (`("--lang" ,lang)
