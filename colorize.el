@@ -41,7 +41,11 @@
     (let* ((props (get-text-property (point) 'face))
            (prop (if (listp props) (car props) props)))
       (if props
-          (format "<span class=\"%s\">%s</span>" prop s)
+          (let ((bg (plist-get props :background)))
+            (if bg
+                (progn
+                  (format "<span style=\"background-color: %s\">%s</span>" bg s))
+              (format "<span class=\"%s\">%s</span>" prop s)))
         s))))
 
 (defun colorize ()

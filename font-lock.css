@@ -11,3 +11,6 @@
 .font-lock-type-face {color: #228b22;}
 .font-lock-variable-name-face {color: #A0522D;}
 .font-lock-warning-face {color: red;}
+
+.css-selector {color: blue;}
+.css-property {color: purple;}

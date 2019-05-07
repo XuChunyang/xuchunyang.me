@@ -42,18 +42,18 @@
 <p>最后我用 <kbd>C-u C-x</kbd> 一一找出 <code>font-lock-*-face</code> 的颜色（相信可以自动找出，但我懒得折腾了），写成 CSS 就大功告成了。</p>
 
 <pre><span class="font-lock-comment-delimiter-face">/* </span><span class="font-lock-comment-face">图形界面 Emacs 默认配色 </span><span class="font-lock-comment-delimiter-face">*/</span>
-<span class="css-selector">.font-lock-builtin-face </span>{<span class="css-property">color</span>: <span class=":background">#483d8b</span>;}
-<span class="css-selector">.font-lock-comment-delimiter-face </span>{<span class="css-property">color</span>: <span class=":background">#b22222</span>;}
-<span class="css-selector">.font-lock-comment-face </span>{<span class="css-property">color</span>: <span class=":background">#b22222</span>;}
-<span class="css-selector">.font-lock-constant-face </span>{<span class="css-property">color</span>: <span class=":background">#008b8b</span>;}
-<span class="css-selector">.font-lock-doc-face </span>{<span class="css-property">color</span>: <span class=":background">#8b2252</span>;}
-<span class="css-selector">.font-lock-function-name-face </span>{<span class="css-property">color</span>: <span class=":background">blue</span>;}
-<span class="css-selector">.font-lock-keyword-face </span>{<span class="css-property">color</span>: <span class=":background">purple</span>;}
-<span class="css-selector">.font-lock-preprocessor-face </span>{<span class="css-property">color</span>: <span class=":background">#483d8b</span>;}
-<span class="css-selector">.font-lock-string-face </span>{<span class="css-property">color</span>: <span class=":background">#8b2252</span>;}
-<span class="css-selector">.font-lock-type-face </span>{<span class="css-property">color</span>: <span class=":background">#228b22</span>;}
-<span class="css-selector">.font-lock-variable-name-face </span>{<span class="css-property">color</span>: <span class=":background">#A0522D</span>;}
-<span class="css-selector">.font-lock-warning-face </span>{<span class="css-property">color</span>: <span class=":background">red</span>;}</pre>
+<span class="css-selector">.font-lock-builtin-face </span>{<span class="css-property">color</span>: <span style="background-color: #483d8b">#483d8b</span>;}
+<span class="css-selector">.font-lock-comment-delimiter-face </span>{<span class="css-property">color</span>: <span style="background-color: #b22222">#b22222</span>;}
+<span class="css-selector">.font-lock-comment-face </span>{<span class="css-property">color</span>: <span style="background-color: #b22222">#b22222</span>;}
+<span class="css-selector">.font-lock-constant-face </span>{<span class="css-property">color</span>: <span style="background-color: #008b8b">#008b8b</span>;}
+<span class="css-selector">.font-lock-doc-face </span>{<span class="css-property">color</span>: <span style="background-color: #8b2252">#8b2252</span>;}
+<span class="css-selector">.font-lock-function-name-face </span>{<span class="css-property">color</span>: <span style="background-color: #0000ff">blue</span>;}
+<span class="css-selector">.font-lock-keyword-face </span>{<span class="css-property">color</span>: <span style="background-color: #800080">purple</span>;}
+<span class="css-selector">.font-lock-preprocessor-face </span>{<span class="css-property">color</span>: <span style="background-color: #483d8b">#483d8b</span>;}
+<span class="css-selector">.font-lock-string-face </span>{<span class="css-property">color</span>: <span style="background-color: #8b2252">#8b2252</span>;}
+<span class="css-selector">.font-lock-type-face </span>{<span class="css-property">color</span>: <span style="background-color: #228b22">#228b22</span>;}
+<span class="css-selector">.font-lock-variable-name-face </span>{<span class="css-property">color</span>: <span style="background-color: #A0522D">#A0522D</span>;}
+<span class="css-selector">.font-lock-warning-face </span>{<span class="css-property">color</span>: <span style="background-color: #ff0000">red</span>;}</pre>
 <h2>一些问题</h2>
 <h3>Emacs Lisp 代码高亮不完整</h3>
 <p>比如宏 <code>when-let</code> 如果 Emacs 没有加载 <code>subr-x.el</code> 就不会有高亮。</p>
