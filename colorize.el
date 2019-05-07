@@ -40,13 +40,15 @@
     (setq s (colorize-escape s))
     (let* ((props (get-text-property (point) 'face))
            (prop (if (listp props) (car props) props)))
-      (if props
-          (let ((bg (plist-get props :background)))
-            (if bg
-                (progn
-                  (format "<span style=\"background-color: %s\">%s</span>" bg s))
-              (format "<span class=\"%s\">%s</span>" prop s)))
-        s))))
+      (cond
+       ((null props) s)
+       ((plist-get props :background)
+        (format "<span style=\"background-color: %s\">%s</span>"
+                (plist-get props :background) s))
+       (t
+        (unless (eq (face-attribute prop :inherit) 'unspecified)
+          (setq prop (face-attribute prop :inherit)))
+        (format "<span class=\"%s\">%s</span>" prop s))))))
 
 (defun colorize ()
   "Colorize the current buffer."
