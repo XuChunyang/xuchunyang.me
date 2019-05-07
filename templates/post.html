@@ -6,4 +6,12 @@
   <time datetime="{{ created.strftime('%Y-%m-%d') }}">{{ created.strftime('%Y 年 %m 月 %d 日') }}</time>
   {{ content | safe }}
 </article>
+<script src="https://utteranc.es/client.js"
+        repo="xuchunyang/xuchunyang.me"
+        issue-term="title"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 {% endblock %}
