@@ -3,10 +3,10 @@ body {
     font-family: -apple-system,system-ui,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
     margin: 0 auto;
     max-width: 42rem;
-    text-align: center;
 }
 
 footer {
+    text-align: center;
     margin-top: 3rem;
     font-size: 12px;
 }
