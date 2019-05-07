@@ -1,5 +1,5 @@
 ---
-date: 2019-05-07 13:45:35 +0800
+created: 2019-05-07 13:45:35 +0800
 title: 基于 Emacs 的语法高亮
 tags: [emacs, syntax highlight]
 ---

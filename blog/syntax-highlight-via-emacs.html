@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="/font-lock.css">
   </head>
   <body>
-    <h1>基于 Emacs 的语法高亮</h1>
+    
+<h1>基于 Emacs 的语法高亮</h1>
 <p>给 HTML 中代码块添加语法高亮的工具很多，比如非常流行的 <a href="http://pygments.org/">Pygments</a> 和 <a href="https://highlightjs.org/">highlight.js</a>，但它们大多不支持 Emacs Lisp 或者效果不好，我暂时没有能力折腾它们，所以尝试用 Emacs 来添加代码高亮。</p>
 <h2>不得不提的 <a href="https://github.com/hniksic/emacs-htmlize">htmlize</a></h2>
 <p>Htmlize 把 Emacs Buffer 的内容和样子一块导出到 HTML，效果非常逼真。但我对它的代码不熟悉，没有认真考虑过用它实现。</p>
@@ -53,6 +54,7 @@
 <h2>一些问题</h2>
 <h3>Emacs Lisp 代码高亮不完整</h3>
 <p>比如宏 <code>when-let</code> 如果 Emacs 没有加载 <code>subr-x.el</code> 就不会有高亮。</p>
+
 
     <footer>
       © 2019 Xu Chunyang (徐春阳) &lt;mail@xuchunyang.me&gt; ，使用 <a href="https://www.gnu.org/s/emacs/">GNU Emacs</a> 制作。

@@ -2,12 +2,13 @@
 <html lang="zh">
   <head>
     <meta charSet="utf-8">
-    <title>{{ title or 'xuchunyang.me' }}</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="/font-lock.css">
   </head>
   <body>
-    {{ content | safe }}
+    {% block content %}
+    {% endblock %}
     <footer>
       © 2019 Xu Chunyang (徐春阳) &lt;mail@xuchunyang.me&gt; ，使用 <a href="https://www.gnu.org/s/emacs/">GNU Emacs</a> 制作。
     </footer>
