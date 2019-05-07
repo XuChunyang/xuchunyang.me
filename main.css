@@ -53,3 +53,18 @@ pre {
     border: 1px solid #ccc;
     box-shadow: 3px 3px 3px #eee;
 }
+
+article h1:first-of-type {
+    text-align: center;
+}
+
+article time:first-of-type {
+    display: block;
+    text-align: center;
+    font-size: 0.8em;
+    color: DimGray;
+}
+
+h1.title {
+    text-align: center;
+}

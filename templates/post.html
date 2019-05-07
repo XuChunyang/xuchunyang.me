@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-{{ content | safe }}
+<article>
+  <h1>{{ title }}</h1>
+  <time datetime="{{ created.strftime('%Y-%m-%d') }}">{{ created.strftime('%Y 年 %m 月 %d 日') }}</time>
+  {{ content | safe }}
+</article>
 {% endblock %}

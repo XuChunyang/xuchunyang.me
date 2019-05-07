@@ -2,6 +2,7 @@ import glob
 import re
 import subprocess
 import collections
+from datetime import datetime
 
 import jinja2
 import mistune
@@ -35,9 +36,10 @@ def md2html(markdown_file):
             yaml_text = text[3:end]
             d = yaml.load(yaml_text, yaml.Loader)
             title = d['title']
+            created = d['created']
             markdown = text[end+3:]
             content = mistune.markdown(markdown, renderer=HighlightRenderer())
-            html = template.render(content=content, title=title)
+            html = template.render(content=content, title=title, created=created)
             out_file.write(html)
         else:
             raise Exception('The Markdown file lacks a yaml header')

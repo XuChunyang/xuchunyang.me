@@ -1,10 +1,8 @@
 ---
-created: 2019-05-07 13:45:35 +0800
+created: 2019-05-07
 title: 基于 Emacs 的语法高亮
 tags: [emacs, syntax highlight]
 ---
-
-# 基于 Emacs 的语法高亮
 
 给 HTML 中代码块添加语法高亮的工具很多，比如非常流行的 [Pygments](http://pygments.org/) 和 [highlight.js](https://highlightjs.org/)，但它们大多不支持 Emacs Lisp 或者效果不好，我暂时没有能力折腾它们，所以尝试用 Emacs 来添加代码高亮。
 
