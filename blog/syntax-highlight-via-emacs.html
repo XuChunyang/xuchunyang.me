@@ -3,6 +3,8 @@
   <head>
     <meta charSet="utf-8">
     <title>基于 Emacs 的语法高亮</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="/font-lock.css">
   </head>
@@ -39,7 +41,8 @@
 </pre>
 <p>把 <code>face</code> 属性翻译成 HTML Class：</p>
 
-<pre>&lt;<span class="font-lock-function-name-face">pre</span>&gt;(&lt;<span class="font-lock-function-name-face">span</span> <span class="font-lock-variable-name-face">class</span>=<span class="font-lock-string-face">"font-lock-keyword-face"</span>&gt;setq&lt;/<span class="font-lock-function-name-face">span</span>&gt; foo &lt;<span class="font-lock-function-name-face">span</span> <span class="font-lock-variable-name-face">class</span>=<span class="font-lock-string-face">"font-lock-string-face"</span>&gt;<span class="font-lock-string-face">"Hello"</span>&lt;/<span class="font-lock-function-name-face">span</span>&gt;)
+<pre>&lt;<span class="font-lock-function-name-face">pre</span>&gt;(&lt;<span class="font-lock-function-name-face">span</span> <span class="font-lock-variable-name-face">class</span>=<span class="font-lock-string-face">"font-lock-keyword-face"</span>&gt;setq&lt;/<span class="font-lock-function-name-face">span</span>&gt; foo &lt;<span class="font-lock-function-name-face">span</span>
+<span class="font-lock-variable-name-face">class</span>=<span class="font-lock-string-face">"font-lock-string-face"</span>&gt;<span class="font-lock-string-face">"Hello"</span>&lt;/<span class="font-lock-function-name-face">span</span>&gt;)
 &lt;/<span class="font-lock-function-name-face">pre</span>&gt;</pre>
 <p>最后我用 <kbd>C-u C-x</kbd> 一一找出 <code>font-lock-*-face</code> 的颜色（相信可以自动找出，但我懒得折腾了），写成 CSS 就大功告成了。</p>
 
