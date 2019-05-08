@@ -37,7 +37,8 @@ Emacs 加上语法高亮后，也就是加上 [(elisp) Text Properties](https://
 把 `face` 属性翻译成 HTML Class：
 
 ```html
-<pre>(<span class="font-lock-keyword-face">setq</span> foo <span class="font-lock-string-face">"Hello"</span>)
+<pre>(<span class="font-lock-keyword-face">setq</span> foo <span
+class="font-lock-string-face">"Hello"</span>)
 </pre>
 ```
 
