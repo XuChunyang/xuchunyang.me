@@ -1,5 +1,6 @@
 import glob
 import re
+import os
 import subprocess
 import collections
 from datetime import datetime
@@ -28,7 +29,10 @@ class HighlightRenderer(mistune.Renderer):
 
 
 def md2html(markdown_file):
-    html_file = re.sub('\.md$', '.html', markdown_file)
+    html_file = re.sub('\.md$', '/index.html', markdown_file)
+    _dir = os.path.dirname(html_file)
+    if not os.path.exists(_dir):
+        os.mkdir(_dir)
     with open(markdown_file) as in_file, open(html_file, 'w') as out_file:
         text = in_file.read()
         if text.startswith('---'):
@@ -67,7 +71,7 @@ Post = collections.namedtuple('Post', 'title url created updated')
 def get_posts():
     posts = []
     for md in glob.glob('blog/*.md'):
-        url = '/' + re.sub('\.md$', '.html', md)
+        url = '/' + re.sub('\.md$', '/', md)
         with open(md) as f:
             text = f.read()
             end = text.find('---', 3)
